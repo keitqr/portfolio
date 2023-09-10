@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Keit Qr] | Developer</title>
+    <title> Keit's Portfolio </title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -29,6 +29,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
+    <link rel="stylesheet" href="scroll_down.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="linkedin.css" />
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
@@ -36,26 +39,50 @@
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
+  <!-- **** Linkedin Rejections **** -->
+  <section class="nav">
+    <h1>LINKEDIN REJECTIONS: </h1>
+    <h3><span class="loader">
+      <span class="m">3</span>
+      <span class="m">&nbsp;</span>
+      <span class="m">8</span>
+      <span class="m">&nbsp;</span>
+      <span class="m">2</span>
+    </span></h3>
+  </section>
+  <div class="background"></div>
+  <!-- SGVsbG8hIE15IG5hbWUgaXMgU2FyYSBNYXphbC4gV2VsY29tZSB0byBteSBDb2RlUGVuIQ== -->
+  
+
+ <!-- **** Linkedin Rejections end **** -->
+
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Keit</span>
+          Hello visitor, my name is <span class="text-color-main">Keit.</span>
           <br />
-          I'm the developer you need.
+          | Physicist | Nanotechnologist | Junior Developer
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Why you should hire me?</a
+            >Why hire me?</a
           >
         </p>
+        <!-- <h1>Email Count</h1>
+        <p>Number of emails matching criteria: <span id="email-count">Loading...</span></p> -->
+
       </div>
+
+      <div class="scroll-indicator"></div>
+
     </section>
     <!-- /END Hero Section -->
 
@@ -79,11 +106,12 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you can!
+                I recently graduated my MSc of Nano-engineering, with a former bachelor in Physics.
+                I am very much into sciences and general into learning  stuff. 
+                This is why i also learned programming, now i want to apply my kwoledge and build better skills.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                For more check resume.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -102,6 +130,115 @@
     </section>
     <!-- /END About Section -->
 
+
+    <!-- Projects Alternative  -->
+
+    <div id= "services" class="container-xxl py-5">
+      <div class="container">
+          <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+              <p class="fs-5 fw-bold text-primary"></p>
+              <h1 class="display-5 mb-5"> MY INTERESTS </h1>
+          </div>
+          <div class="row g-4">
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="service-item rounded d-flex h-100">
+                      <div class="service-img rounded">
+                          <img class="img-fluid" src="../img/gallery/Figtrees/3figtrees.jpg" alt="">
+                      </div>
+                      <div class="service-text rounded p-5">
+                          <div class="btn-square rounded-circle mx-auto mb-3">
+                              <img class="img-fluid" src="../img/icon/icon-3.png" alt="Icon">
+                          </div>
+                          <h4 class="mb-3">Landscaping</h4>
+                          <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="service-item rounded d-flex h-100">
+                      <div class="service-img rounded">
+                          <img class="img-fluid" src="../img/gallery/Figtrees/equipment.jpg" alt="">
+                      </div>
+                      <div class="service-text rounded p-5">
+                          <div class="btn-square rounded-circle mx-auto mb-3">
+                              <img class="img-fluid" src="../img/icon/icon-6.png" alt="Icon">
+                          </div>
+                          <h4 class="mb-3">Pruning plants</h4>
+                          <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="service-item rounded d-flex h-100">
+                      <div class="service-img rounded">
+                          <img class="img-fluid" src="../img/gallery/Figtrees/figtree_after_cleaning.jpg" alt="">
+                      </div>
+                      <div class="service-text rounded p-5">
+                          <div class="btn-square rounded-circle mx-auto mb-3">
+                              <img class="img-fluid" src="../img/icon/icon-5.png" alt="Icon">
+                          </div>
+                          <h4 class="mb-3">Irrigation & Drainage</h4>
+                          <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                         
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="service-item rounded d-flex h-100">
+                      <div class="service-img rounded">
+                          <img class="img-fluid" src="../img/gallery/Figtrees/figtree_after_cleaning_body.jpg" alt="">
+                      </div>
+                      <div class="service-text rounded p-5">
+                          <div class="btn-square rounded-circle mx-auto mb-3">
+                              <img class="img-fluid" src="../img/icon/icon-4.png" alt="Icon">
+                          </div>
+                          <h4 class="mb-3">Garden Maintenance </h4>
+                          <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                         
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="service-item rounded d-flex h-100">
+                      <div class="service-img rounded">
+                          <img class="img-fluid" src="../img/gallery/Figtrees/figtree_before_cleaning.jpg" alt="">
+                      </div>
+                      <div class="service-text rounded p-5">
+                          <div class="btn-square rounded-circle mx-auto mb-3">
+                              <img class="img-fluid" src="../img/icon/icon-8.png" alt="Icon">
+                          </div>
+                          <h4 class="mb-3">Green Technology</h4>
+                          <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                          
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="service-item rounded d-flex h-100">
+                      <div class="service-img rounded">
+                          <img class="img-fluid" src="../img/gallery/Figtrees/figtree_christos.jpg" alt="">
+                      </div>
+                      <div class="service-text rounded p-5">
+                          <div class="btn-square rounded-circle mx-auto mb-3">
+                              <img class="img-fluid" src="../img/icon/icon-2.png" alt="Icon">
+                          </div>
+                          <h4 class="mb-3">Urban Gardening</h4>
+                          <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                         
+                      </div>
+                  </div>
+              </div>
+         
+         
+          </div>
+      </div>
+  </div>
+
+  <!-- Projects Alternative end -->
+
+
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
@@ -115,11 +252,7 @@
                 <h3 class="project-wrapper__text-title">Robofriends</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    Web app, utilizing API of.... 
                   </p>
                 </div>
                 <a
@@ -153,7 +286,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/banner.png"
+                      src="assets/robofriends.png"
                     />
                   </div>
                 </a>
@@ -166,14 +299,10 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Face recognition web app</h3>
                 <div>
                   <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
+                    A web app where utilizing Clarifai API and their models, to recognize faces on photos.
                   </p>
                 </div>
                 <a
@@ -207,7 +336,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/face_reco.png"
                     />
                   </div>
                 </a>
@@ -217,7 +346,7 @@
           <!-- /END Project -->
 
           <!-- Notice: each .row is a project -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Project Title 2</h3>
@@ -272,81 +401,182 @@
         </div>
       </div>
     </section>
-    <!-- /END Projects Section -->
+    <!-- /END Projects Section --> 
 
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contact me</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
+          <!-- <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:example@email.com"
             >Call to Action</a
-          >
+          > -->
+          <div class="wrapper">
+            <div class="wrapper__links">
+            <a class="social-link social-link--github" id="github">
+              <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <title>
+                  github
+                </title>
+                <g class="social-group" fill="none" fill-rule="evenodd">
+                  <circle class="social-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
+                  <circle class="social-group__inner-circle" fill="#000" cx="300" cy="300" r="252.5" />
+                  <path class="social-group__icon" d="M300 150c-82.8348 0-150 68.8393-150 153.817 0 67.9687 42.991 125.558 102.5893 145.9151 7.5 1.4063 10.2455-3.3482 10.2455-7.433 0-3.683-.134-13.3259-.2009-26.183-41.7187 9.308-50.558-20.625-50.558-20.625-6.8304-17.7456-16.6741-22.5-16.6741-22.5-13.5938-9.576 1.0044-9.375 1.0044-9.375 15.067 1.0714 22.9688 15.8705 22.9688 15.8705 13.3929 23.5045 35.0893 16.741 43.6607 12.7902 1.3393-9.9107 5.2232-16.741 9.509-20.558-33.2813-3.884-68.3036-17.076-68.3036-76.0045 0-16.808 5.8259-30.5357 15.4018-41.25-1.5402-3.884-6.6965-19.5536 1.4732-40.7143 0 0 12.5893-4.1518 41.25 15.7366 11.9866-3.4152 24.7768-5.0893 37.567-5.1562 12.7231.067 25.5803 1.741 37.5669 5.1562 28.6607-19.8884 41.183-15.7366 41.183-15.7366 8.1697 21.1607 3.0134 36.8304 1.4733 40.7143 9.5758 10.7812 15.4017 24.509 15.4017 41.25 0 59.0625-35.0892 72.0536-68.5044 75.8705 5.3571 4.7545 10.1785 14.1295 10.1785 28.4598 0 20.558-.2009 37.1652-.2009 42.1875 0 4.0849 2.6786 8.9063 10.3125 7.3661C407.076 429.308 450 371.7187 450 303.817 450 218.8393 382.8348 150 300 150z"
+                    fill="#FFF" fill-rule="nonzero" />
+                </g>
+              </svg>
+            </a>
+            <a class="social-link social-link--linkedin" id="linkedin">
+              <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <title>
+                  linkedin
+                </title>
+                <g class="social-group" fill="none" fill-rule="evenodd">
+                  <circle class="social-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
+                  <circle class="social-group__inner-circle" fill="#2D76B0" cx="300" cy="300" r="252.5" />
+                  <path class="social-group__icon" d="M278.9308 253.1923h43.5769v20.0539h.5923c6.0923-11.5077 20.9-23.6077 43.0692-23.6077 46.0308 0 54.577 30.2923 54.577 69.723v80.2154h-45.4385v-71.1615c0-17.0077-.2539-38.8385-23.6077-38.8385-23.6923 0-27.2462 18.5308-27.2462 37.5693v72.4307h-45.4384l-.0846-146.3846zm-74.1231 0h45.523V399.577h-45.523V253.1923zm22.8461-72.7692c14.5539 0 26.4 11.8461 26.4 26.4 0 14.5538-11.8461 26.4-26.4 26.4-14.6384 0-26.4-11.8462-26.4-26.4 0-14.5539 11.7616-26.4 26.4-26.4z"
+                    fill="#000" fill-rule="nonzero" />
+                </g>
+              </svg>
+            </a>
+            <a class="social-link social-link--instagram" id="instagram">
+              <svg class="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <title>
+                  instagram
+                </title>
+                <defs>
+                  <linearGradient x1="0%" y1="100%" y2="0%" id="simpleInsta">
+                    <stop stop-color="#D72F3F" offset="0%" />
+                    <stop stop-color="#4221B9" offset="100%" />
+                  </linearGradient>
+                </defs>
+                <g class="social-group" fill="none" fill-rule="evenodd">
+                  <circle class="social-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
+                  <circle class="social-group__inner-circle social-group__inner-circle--instagram" fill="url(#simpleInsta)" cx="300" cy="300"
+                    r="252.5" />
+                  <path class="social-group__icon" d="M436.8577 205.4154c-3.6808-9.4808-8.5885-17.5116-16.6192-25.5423-8.0308-8.0308-16.0616-12.9385-25.5423-16.6193-9.1462-3.5692-19.7424-6.023-35.0231-6.6923-15.3923-.6692-20.3-.8923-59.5616-.8923-39.2615 0-44.1692.1116-59.5615.8923-15.3923.6693-25.877 3.1231-35.023 6.6923-9.4808 3.6808-17.5116 8.5885-25.5424 16.6193-8.0308 8.0307-12.9384 16.0615-16.6192 25.5423-3.5692 9.1461-6.023 19.7423-6.6923 35.023-.6693 15.3924-.8923 20.3-.8923 59.5616 0 39.2615.1115 44.1692.8923 59.5615.6692 15.3923 3.123 25.877 6.6923 35.0231 3.6808 9.4808 8.5884 17.5116 16.6192 25.5423 8.0308 8.0308 16.0616 12.9385 25.5423 16.6193 9.1462 3.5692 19.7423 6.023 35.0231 6.6923 15.3923.6692 20.3.8923 59.5615.8923 39.2616 0 44.1693-.1116 59.5616-.8923 15.3923-.6693 25.8769-3.1231 35.023-6.6923 9.4808-3.6808 17.5116-8.5885 25.5424-16.6193 8.0307-8.0307 12.9384-16.0615 16.6192-25.5423 3.5692-9.1461 6.023-19.7423 6.6923-35.023.6692-15.3924.8923-20.3.8923-59.5616 0-39.2615-.1115-44.1692-.8923-59.5615-.6692-15.3923-3.123-25.877-6.6923-35.0231zm-19.2962 152.9192c-.6692 14.0539-3.0115 21.75-5.0192 26.7692-2.5654 6.6924-5.8 11.6-10.8192 16.6193-5.0193 5.0192-9.8154 8.1423-16.6193 10.8192-5.1307 2.0077-12.7153 4.35-26.7692 5.0192-15.2808.6693-19.7423.8923-58.3346.8923s-43.1654-.1115-58.3346-.8923c-14.0539-.6692-21.75-3.0115-26.7692-5.0192-6.6924-2.5654-11.6-5.8-16.6193-10.8192-5.0192-5.0193-8.1423-9.8154-10.8192-16.6193-2.0077-5.1307-4.35-12.7153-5.0192-26.7692-.6693-15.2808-.8923-19.8538-.8923-58.3346s.1115-43.1654.8923-58.3346c.6692-14.0539 3.0115-21.75 5.0192-26.7692 2.5654-6.6924 5.8-11.6 10.8192-16.6193 5.0193-5.0192 9.8154-8.1423 16.6193-10.8192 5.1307-2.0077 12.7153-4.35 26.7692-5.0192 15.2808-.6693 19.8538-.8923 58.3346-.8923s43.1654.1115 58.3346.8923c14.0539.6692 21.75 3.0115 26.7692 5.0192 6.6924 2.5654 11.6 5.8 16.6193 10.8192 5.0192 5.0193 8.1423 9.8154 10.8192 16.6193 2.0077 5.1307 4.35 12.7153 5.0192 26.7692.6693 15.2808.8923 19.8538.8923 58.3346s-.223 43.1654-.8923 58.3346zM300 225.827c-40.9346 0-74.173 33.2385-74.173 74.1731s33.2384 74.173 74.173 74.173 74.173-33.2384 74.173-74.173-33.2384-74.173-74.173-74.173zm0 122.3577c-26.5462 0-48.1846-21.527-48.1846-48.1846 0-26.5462 21.527-48.1846 48.1846-48.1846 26.6577 0 48.1846 21.527 48.1846 48.1846 0 26.5462-21.6384 48.1846-48.1846 48.1846zm77.073-107.9692c-9.548 0-17.2884-7.7403-17.2884-17.2885 0-9.5481 7.7403-17.2884 17.2885-17.2884 9.5481 0 17.2884 7.7403 17.2884 17.2884 0 9.5482-7.7403 17.2885-17.2884 17.2885z"
+                    fill="#FFF" fill-rule="nonzero" />
+                </g>
+              </svg>
+            </a>
+            </div>
         </div>
       </div>
     </section>
+
+
+    <script>
+      // Get references to the anchor elements
+      const githubIcon = document.getElementById("github");
+      const linkedinIcon = document.getElementById("linkedin");
+      const instagramIcon = document.getElementById("instagram");
+    
+      // Define the URLs to redirect to
+      const githubUrl = "https://github.com/keitqr";
+      const linkedinUrl = "https://www.linkedin.com/in/aikaterini-kiourtzidou-keit/";
+      const instagramUrl = "https://www.instagram.com/keit_qr/";
+    
+      // Add click event listeners to each icon
+      githubIcon.addEventListener("click", function () {
+        window.location.href = githubUrl;
+      });
+    
+      linkedinIcon.addEventListener("click", function () {
+        window.location.href = linkedinUrl;
+      });
+    
+      instagramIcon.addEventListener("click", function () {
+        window.location.href = instagramUrl;
+      });
+    </script>
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->
     <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
+      <div class="container">       
+        <a rel="noreferrer" href="#top" class="back-to-top">     
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>      
+        </a>   
         </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobidev" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
-      </div>
     </footer>
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const scrollIndicator = document.querySelector(".scroll-indicator");
+          let isScrollingDown = false;
+  
+          // Function to hide the scroll indicator
+          function hideScrollIndicator() {
+              if (isScrollingDown) {
+                  scrollIndicator.style.opacity = "0";
+              } else {
+                  scrollIndicator.style.opacity = "1";
+              }
+          }
+  
+          // Function to check if the user is scrolling down
+          function handleScroll() {
+              const currentScrollPos = window.scrollY;
+              if (currentScrollPos > lastScrollPos) {
+                  isScrollingDown = true;
+              } else {
+                  isScrollingDown = false;
+              }
+              lastScrollPos = currentScrollPos;
+              hideScrollIndicator();
+          }
+  
+          let lastScrollPos = window.scrollY;
+  
+          // Add a scroll event listener to detect scrolling and handle it
+          window.addEventListener("scroll", handleScroll);
+  
+          // Initially hide the scroll indicator
+          hideScrollIndicator();
+      });
+  </script>
+
+  <!-- <script>
+    // JavaScript code to fetch and display the email count
+    fetch('http://127.0.0.1:5000/api/email-count')
+      .then(response => response.json())
+      .then(data => {
+          document.getElementById('email-count').textContent = data.count;
+      })
+      .catch(error => {
+          console.error('Error fetching email count:', error);
+      });
+
+  </script> -->
+
+<script src="../particles.js/particles.js"></script>
+  <script>
+    console.log('Particles library loaded.');
+    window.onload = function () {
+        Particles.init({
+            selector: ".background",
+            color: ["#03dac6", "#ff0266", "#000000"],
+            connectParticles: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    options: {
+                        color: ["#faebd7", "#03dac6", "#ff0266"],
+                        maxParticles: 43,
+                        connectParticles: false
+                    }
+                }
+            ]
+        });
+    };
+</script>
+  
+  
   </body>
 </html>

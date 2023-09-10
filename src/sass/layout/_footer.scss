@@ -1,64 +1,112 @@
+
+$color-primary: #ffffff;
+$color-primary-light: #f6f6f6;
+$color-primary-dark: #fdfdfd;
+
+$color-white: #FFFBFA;
+
+$color-black: #191308;
+
 .footer {
-  background-color: $dark-grey;
-  color: $white-color;
-  padding: 4.8rem 0;
-
-  @include respond(phone) {
-    border: 0px;
-  }
-
-  &__text {
-    color: darken($white-color, 50%);
-    font-size: 1.3rem;
-
-    a {
-      color: darken($white-color, 50%);
-      font-size: 1.3rem;
-      transition: all 0.4s;
-      display: inline-block;
-      background-color: $dark-grey;
-
-      &:hover,
-      &:active {
-        color: $primary-color;
-        -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-      }
-    }
-  }
-
-  & hr {
-    margin: 1rem auto;
-    border: 0;
-    width: 50%;
-    border-top: 2px solid grey;
-  }
+  background-color: #2d76b0;
 }
 
-.social-links {
+.wrapper {
+  margin-top: 90px;
+  margin-left: 350px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-
-  a {
+  align-items: center;
+  width: 0px;
+  height:0px;
+  background-image: linear-gradient(to bottom right, rgba($color-primary,1),rgba($color-primary-dark,1));
+  transition: all .4s ease-out;
+  
+  &__links {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: $white-color;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin: $default-font-size $default-font-size;
-    transition: all 0.2s ease-in;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
   }
 }
+
+.social-link {
+
+  &--linkedin {
+    color: #2d76b0;
+  }
+
+  &--github {
+    color: #000;
+  }
+
+  &--instagram {
+    color: #9a2970;
+  }
+
+
+
+  & .social-svg {
+    width: 20rem;
+    height: 6rem;
+
+    & .social-group {
+
+      &__icon {
+        fill: $color-black;
+        transition: all .2s;
+      }
+
+      &__inner-circle {
+        fill: transparent;
+        transition: all .2s;
+      }
+
+      &__outline {
+        stroke: $color-black;
+        transform-origin: 50% 50%;
+        transition: all .2s;
+      }
+  
+  }
+
+  &:hover, &:active, &:focus {
+
+    & .social-group {
+
+      &__icon {
+        fill: $color-white;
+        transition: all .45s;
+      }
+
+      &__inner-circle {
+        fill: currentColor;
+        transition: all .45s;
+
+        &--instagram {
+          fill: url(#simpleInsta) !important;
+        }
+
+      }
+
+      &__outline {
+        stroke: currentColor;
+        transform: scale(1.1);
+        transition: all .45s;
+      }
+
+    } 
+
+  }
+
+  }
+
+}
+
+
 
 .back-to-top i {
-  color: $white-color;
+  color: #000;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
 
@@ -66,3 +114,4 @@
     transform: translateY(-2px);
   }
 }
+
